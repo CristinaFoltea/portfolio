@@ -95,6 +95,7 @@ video#bgvid {
 @media screen and (max-device-width: 800px) {
   body {
     background: url(img/mainBG.jpg) no-repeat center center fixed;
-    background-size: cover; }
+    background-size: cover;
+    margin-top: 60%; }
   #bgvid {
     display: none; } }
