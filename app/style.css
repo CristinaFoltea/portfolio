@@ -96,8 +96,8 @@ video#bgvid {
   body {
     background: url(img/mainBG.jpg) no-repeat center center fixed;
     position: absolute;
-    top: 20px;
-    background-size: cover;
-    margin-top: 55%; }
+    top: 20px; }
+  h1.title {
+    margin-top: 450px; }
   #bgvid {
     display: none; } }
