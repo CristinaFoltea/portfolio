@@ -1,0 +1,18 @@
+body {
+  font-family: 'dharma_gothic_cthin';
+}
+
+h1.title {
+  color: $darkgrey;
+  font-size: 5em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  font-family: 'dharma_gothic_ethin';
+  color: $darkgrey;
+  font-size: 1.7em;
+  letter-spacing: 0.04em;
+}
