@@ -96,7 +96,7 @@ video#bgvid {
   body {
     background: url(img/mainBG.jpg) no-repeat center center fixed;
     position: absolute;
-    top: -50px; }
+    top: -100px; }
   h1.title {
     margin-top: 450px; }
   #bgvid {
