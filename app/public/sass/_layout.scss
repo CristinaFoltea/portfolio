@@ -1,0 +1,56 @@
+
+body {
+  overflow: hidden;
+  .main {
+    position: relative;
+    top: 61.9vh;
+  .menu {
+    position: relative;
+    bottom: 20px;
+  }}
+  h1.title {
+    border-bottom: 1px solid $darkgrey;
+  }
+  a {
+    display: inline-block;
+    padding: 0 2.5% 0 1.1%;
+  }
+  .about, .portfolio, .contact {
+    background: url(public/img/mainBG.jpg);
+    background-size: cover;
+    .menu {
+      padding: 5vh 0 0vh 0;
+      height: 4.8vh;
+      border-bottom: 1px solid $darkgrey;
+    }
+  }
+  .footer {
+    position: relative;
+    top: 70.5vh;
+    border-top: 1px solid $darkgrey;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+      margin-right: 2vh;
+      position: relative;
+      bottom: 5vh;
+      .social {
+        margin-top: -5vh;
+        a {
+          display: inline;
+          img {
+            width: 4vh;
+            height: auto;
+          }
+        }
+      }
+    }
+    i {
+      display: inline-block;
+      width: 30px;
+      color: $red;
+    }
+  }
+}

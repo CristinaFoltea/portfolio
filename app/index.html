@@ -7,28 +7,21 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body>
-  <h1 class="title">Cristina Swearingen</h1>
-  <header class="menu">
-    <a href="#/view1">About</a>
-    <a href="#/view2">Portfolio</a>
-    <a href="#/view3">Contact</a>
-  </header>
-  <video autoplay loop poster="img/mainBG.jpg" id="bgvid">
-    <source src="img/transformed.mov" type="video/mp4">
-  </video>
-  <div ng-view></div>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
+<body ng-controller="mainCtrl">
+  <div ng-view class="{{page}}"></div>
+  <script src="https://code.angularjs.org/1.4.3/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.4.3/angular-route.min.js"></script>
+  <script src="https://code.angularjs.org/1.4.3/angular-animate.min.js"></script>
+  <script src="angular/app.js"></script>
+  <script src="angular/controllers.js"></script>
+  <script src="angular/directives.js"></script>
+  <script src="angular/factories.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="view3/view3.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+  <script src="view4/view4.js"></script>
 </body>
 </html>

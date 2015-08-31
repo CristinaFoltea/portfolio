@@ -1,0 +1,34 @@
+@media only screen and (max-device-width: 480px) {
+    #bgvid {
+      display: none;
+    }
+    body {
+      h1.title {
+        margin-top: -5vh;
+        border-bottom: 0px;
+      }
+      .about, .portfolio, .contact {
+        .menu {
+          border-bottom: 0px;
+        }}
+      .footer {
+        .left {
+          width: 100vw;
+        }
+        .right {
+          width: 100vw;
+
+          h1 {
+            text-align: left;
+            padding: 0 5vw;
+          }
+          img {
+            float: left;
+          }
+          .social {
+            padding: 0 5vw;
+          }
+        }
+      }
+    }
+  }
