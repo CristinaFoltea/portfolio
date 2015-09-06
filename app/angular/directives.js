@@ -6,6 +6,10 @@ app.directive('headerNav', ['$location', function($location){
 }])
 app.directive('footer', function(){
   return {
-    templateUrl : 'angular/templates/footer.html'
+    templateUrl : 'angular/templates/footer.html',
+    link : function(scope, element){
+      scope.visible = false
+      console.log(scope.visible)
+    }
   }
 })

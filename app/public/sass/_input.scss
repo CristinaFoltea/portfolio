@@ -1,0 +1,23 @@
+input, textarea {
+  display: inline-block;
+  appearance: none;
+  width: 40vw;
+  height: 6vh;
+  border-radius: 5px 5px;
+  border: none;
+  background: rgba(0, 0, 0, .1);
+  outline: none;
+}
+ textarea {
+   height: 20vh;
+   resize: none;
+ }
+ label {
+   display: inline-block;
+   width: 110px;
+   margin-left: -110px;
+ }
+
+input[type="button"]{
+  appearance: none;
+}

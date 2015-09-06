@@ -1,7 +1,11 @@
-<article class="main" ng-controller='firstCtrl'>
+<article class="main">
   <h1 class="title bit-1 row-10">Cristina Swearingen</h1>
-  <header-nav class="fade menu row-10"></header-nav>
+  <div class="menu">
+    <a href="#/view2" class="hover" data-hover="About" ng-class="getClass('/view2')">About</a>
+    <a href="#/view3" class="hover" data-hover="Portfolio" ng-class="getClass('/view3')">Portfolio</a>
+    <a href="#/view4" class="hover" data-hover="Contact" ng-class="getClass('/view4')">Contact</a>
+  </div>
     <video autoplay loop poster="public/img/mainBG.jpg" id="bgvid">
-      <source src="public/img/transformed.mp4" type="video/mp4">
+      <source src="public/img/transform.mp4" type="video/mp4">
     </video>
 </article>

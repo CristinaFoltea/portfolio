@@ -1,20 +1,15 @@
-.home, .about {
+.home, .about, .portfolio, .contact {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
 }
 
-.about.ng-enter{
-    top: 70%;
-    -webkit-transition: all 2s ease;
-    transition: all 2s ease;
-}
 .home.ng-leave {
     opacity: 1;
-    -webkit-transition: opacity 1000ms linear;
-    transition: opacity 1000ms linear;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .about.ng-enter-active {
@@ -25,4 +20,5 @@
 }
 .home.ng-leave-active {
   opacity: 0;
+  top: -100vh;
 }

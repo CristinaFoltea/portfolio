@@ -1,15 +1,48 @@
 body {
+  overflow: scroll;
   font-family: 'dharma_gothic_cthin';
   color: $darkgrey;
   .menu {
     text-align: center;
     a.active {
-      color: $red;
+      font-weight: bold;
+      color: lighten($darkgrey, 37%);;
     }
+    .hover:hover {
+	  color: $red;
+    }
+    .hover::before {
+    	content: attr(data-hover);
+    	position: absolute;
+    	z-index: 2;
+    	overflow: hidden;
+    	color: $darkgrey;
+    	white-space: nowrap;
+    	height: 100%;
+    	transition: height 0.4s 0.1s;
+    }
+
+    .hover:hover::before {
+    	height: 0%;
+    }
+  }
+  .container {
+    p, label, textarea, h2 {
+       line-height: 2rem;
+       font-family: 'gotham';
+       font-size: 1rem;
+   }
+   .info p{
+     line-height: 1.5rem;
+     font-size: 1rem;
+   }
+   input[type="button"] {
+     font-family: 'gothamM';
+   }
   }
   h1 {
     font-size: 4.5rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: $red;
     font-weight: 500;
     text-align: center;
@@ -20,7 +53,7 @@ body {
     text-decoration: none;
     color: $darkgrey;
     font-size: 1.7em;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
   }
   i {
     font-size: 2rem;
