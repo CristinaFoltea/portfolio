@@ -434,6 +434,12 @@ body {
       text-align: justify;
       margin-left: auto;
       margin-right: auto; }
+      body .about .container .info img, body .portfolio .container .info img, body .contact .container .info img {
+        width: 12vw;
+        height: auto;
+        border-radius: 150px 150px;
+        box-shadow: 0 1px 2px #88969d;
+        float: left; }
     body .about .container .contacts, body .portfolio .container .contacts, body .contact .container .contacts {
       padding-top: 7vh;
       width: 50vw;
