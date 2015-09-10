@@ -1,19 +1,21 @@
 <section>
   <header-nav class="menu"></header-nav>
   <div class="container">
-    <p>
-      <label for="name">Your name</label>
-      <input type="text" id="name">
-    </p>
-    <p>
-      <label for="subject">Subject title</label>
-      <input type="text" id="subject">
-    </p>
-    <label for="message">Message</label>
-    <textarea id="message"></textarea>
-    <p>
-      <input type="button" ng-click="submit()" value="Send me a Message">
-    </p>
+    <div class="contacts">
+      <p>
+        <label for="name">Your name</label>
+        <input type="text" id="name" ng-model="message.name">
+      </p>
+      <p>
+        <label for="subject">Subject title</label>
+        <input type="text" id="subject" ng-model="message.subject">
+      </p>
+      <label for="message">Message</label>
+      <textarea id="message" ng-model="message.text"></textarea>
+      <p>
+        <input type="button" ng-click="submit()" value="Send me a Message">
+      </p>
+    </div>
   </div>
   <footer></footer>
 </section>

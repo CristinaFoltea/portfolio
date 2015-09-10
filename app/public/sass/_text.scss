@@ -6,7 +6,7 @@ body {
     text-align: center;
     a.active {
       font-weight: bold;
-      color: lighten($darkgrey, 37%);;
+      color: lighten($darkgrey, 37%);
     }
     .hover:hover {
 	  color: $red;
@@ -39,6 +39,9 @@ body {
    input[type="button"] {
      font-family: 'gothamM';
    }
+   input[type='text']{
+     text-transform: uppercase;
+   }
   }
   h1 {
     font-size: 4.5rem;
@@ -53,7 +56,7 @@ body {
     text-decoration: none;
     color: $darkgrey;
     font-size: 1.7em;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.07em;
   }
   i {
     font-size: 2rem;

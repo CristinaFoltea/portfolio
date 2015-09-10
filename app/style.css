@@ -11,6 +11,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'dharma_gothicX';
+  src: url("public/font/dharma/dharmaGothicE-ExLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'gotham';
   src: url("public/font/GothamRnd-Light.woff") format("woff");
   font-weight: normal;
@@ -19,36 +25,6 @@
 @font-face {
   font-family: 'gothamM';
   src: url("public/font/GothamRnd-Medium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'tungstenThin';
-  src: url("public/font/TungstenComp-Thin.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'tungstenLight';
-  src: url("public/font/TungstenComp-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'tungstenMedium';
-  src: url("public/font/TungstenComp-Book.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'tungstenCLight';
-  src: url("public/font/TungstenCond-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'tungstenCThin';
-  src: url("public/font/TungstenCond-Thin.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -416,28 +392,6 @@ th {
   padding-right: 10px;
   float: right; }
 
-.home, .about, .portfolio, .contact {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh; }
-
-.home.ng-leave {
-  opacity: 1;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease; }
-
-.about.ng-enter-active {
-  top: 0; }
-
-.home.ng-leave {
-  top: 0; }
-
-.home.ng-leave-active {
-  opacity: 0;
-  top: -100vh; }
-
 .clearfix:after {
   content: "";
   display: table;
@@ -459,7 +413,12 @@ body {
     padding: 0 2.3% 0 1.1%; }
   body .about, body .portfolio, body .contact {
     background: url(public/img/other1_3.jpg) center;
-    background-size: cover; }
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh; }
     body .about .menu, body .portfolio .menu, body .contact .menu {
       width: 40vw;
       margin-left: auto;
@@ -467,20 +426,36 @@ body {
       padding: 5vh 0 0vh 0;
       height: 4.8vh;
       border-bottom: 1px solid #b7c0c4; }
-    body .about .container, body .portfolio .container, body .contact .container {
-      padding: 5vh 16vh; }
-      body .about .container .info, body .portfolio .container .info, body .contact .container .info {
-        width: 40vw;
-        height: 55vh;
-        overflow: scroll;
-        text-align: justify;
-        margin-left: auto;
-        margin-right: auto; }
-      body .about .container img, body .portfolio .container img, body .contact .container img {
+    body .about .container .info, body .portfolio .container .info, body .contact .container .info {
+      padding-top: 7vh;
+      width: 40vw;
+      height: 55vh;
+      overflow: scroll;
+      text-align: justify;
+      margin-left: auto;
+      margin-right: auto; }
+    body .about .container .contacts, body .portfolio .container .contacts, body .contact .container .contacts {
+      padding-top: 7vh;
+      width: 50vw;
+      padding-left: 29.8vw; }
+    body .about .container .figures, body .portfolio .container .figures, body .contact .container .figures {
+      margin-left: 16vh;
+      margin-right: 16vh; }
+    body .about .container figure, body .portfolio .container figure, body .contact .container figure {
+      position: relative;
+      margin: 5.5vh 0 0 0;
+      padding: 0;
+      float: left; }
+      body .about .container figure img, body .portfolio .container figure img, body .contact .container figure img {
         width: 25vw;
-        height: auto;
-        float: left;
+        height: 25vh;
         cursor: pointer; }
+      body .about .container figure figcaption, body .portfolio .container figure figcaption, body .contact .container figure figcaption {
+        position: absolute;
+        bottom: 0;
+        background: #000;
+        color: white;
+        width: 100%; }
     body .about .footer, body .portfolio .footer, body .contact .footer {
       width: 100vw;
       position: fixed;
@@ -588,6 +563,8 @@ body {
     font-size: 1rem; }
   body .container input[type="button"] {
     font-family: 'gothamM'; }
+  body .container input[type='text'] {
+    text-transform: uppercase; }
   body h1 {
     font-size: 4.5rem;
     letter-spacing: 0.06em;
@@ -600,7 +577,7 @@ body {
     text-decoration: none;
     color: #566369;
     font-size: 1.7em;
-    letter-spacing: 0.06em; }
+    letter-spacing: 0.07em; }
   body i {
     font-size: 2rem; }
 
@@ -677,4 +654,21 @@ label {
   margin-left: -110px; }
 
 input[type="button"] {
-  appearance: none; }
+  appearance: none;
+  width: 39.6vw;
+  background: #d6e2f2;
+  background: -webkit-linear-gradient(top, #E2EDF0, #CAD6D9);
+  box-shadow: 0 1px 0 #a4afb4, 0 2px 4px #a4afb4, 0 1px 6px #a4afb4;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease; }
+
+input[type="button"]:active {
+  box-shadow: 0 1px 0 #a4afb4, 0 1px 2px #a4afb4, 0 0 3px #a4afb4;
+  -webkit-transform: translateY(3px); }
+
+.home, .about, .portfolio, .contact {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh; }

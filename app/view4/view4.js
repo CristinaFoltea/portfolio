@@ -5,6 +5,9 @@ app.config(['$routeProvider', function($routeProvider) {
   });
 }])
 
-.controller('View4Ctrl', ['$scope', function($scope) {
+.controller('View4Ctrl', ['$scope','$http', function($scope, $http) {
   $scope.page ="contact"
+  $scope.submit = function(){
+    $http.post('https://www.googleapis.com/gmail/v1/users/crisswear@gamil.com/messages/send')
+  }
 }]);
