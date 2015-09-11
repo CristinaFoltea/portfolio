@@ -21,7 +21,6 @@ body {
     	height: 100%;
     	transition: height 0.4s 0.1s;
     }
-
     .hover:hover::before {
     	height: 0%;
     }
@@ -81,6 +80,7 @@ body {
       padding: 0 0 5px 0;
       font-family: 'gotham';
       font-size: 1rem;
+      letter-spacing: 0.4;
       line-height: 1.25rem;
     }
   }
