@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
     imagemin = require('gulp-imagemin'),
-    fontmin = require('gulp-fontmin')
+    fontmin = require('gulp-fontmin'),
+    autoprefixer = require('gulp-autoprefixer')
 
 gulp.task('scripts', function() {
   gulp.src('app/**/*.js')
@@ -17,6 +18,7 @@ gulp.task('styles', function () {
   return sass('app/public/sass/style.scss')
     .on('error', sass.logError)
     .pipe(plumber())
+    .pipe(autoprefixer())
     .pipe(minifyCss())
     .pipe(gulp.dest('app/build/css'))
 })

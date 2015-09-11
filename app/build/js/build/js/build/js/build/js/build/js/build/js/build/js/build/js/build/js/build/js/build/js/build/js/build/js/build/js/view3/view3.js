@@ -1,0 +1,1 @@
+app.config(["$routeProvider",function(e){e.when("/view3",{templateUrl:"view3/view3.html",controller:"View3Ctrl"})}]).controller("View3Ctrl",["$scope",function(e){e.page="portfolio"}]);
