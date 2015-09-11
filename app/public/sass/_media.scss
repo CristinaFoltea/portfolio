@@ -3,8 +3,16 @@
     display: none;
   }
   body {
+    background: url(/app/build/img/other1_3.jpg)center;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
     h1.title {
       margin-top: -5vh;
+      padding-bottom: 13vh;
       border-bottom: 0px;
     }
   .about, .portfolio, .contact {
@@ -16,28 +24,40 @@
       .info {
         width: 100vw;
       }
+      .figures {
+        figure {
+          width: 55vw;
+          margin-left: -5vw;
+          img{
+            width: 55vw;
+            height: auto;
+          }
+        }
+      }
     }
   }
     .footer {
-      background: lighten($darkgrey, 37%);
-      .footer::before {
-        content: "\f0c9";
-        font-size: 2rem;
-      }
+      position: fixed;
+      bottom: 0;
+      padding: 0.5vh;
       .left {
-        width: 100vw;
+        a {
+          font-size: 0.6rem;
+          color: darken($darkgrey, 40%);;
+        }
       }
       .right {
-        width: 100vw;
         h1 {
-          text-align: left;
-          padding: 0 5vw;
+          font-size: 1.6rem;
+          position: relative;
+          top: 4vh;
         }
-        img {
-          float: left;
+        .social{
+          position: absolute;
+          bottom: -8vh;
+          right: 0;
+          width: 40vw;
         }
-        .social {
-          padding: 0 5vw;
-        }}}
+      }}
     }
   }

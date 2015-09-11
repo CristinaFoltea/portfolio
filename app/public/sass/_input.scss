@@ -14,7 +14,10 @@ input, textarea {
  }
  label {
    display: inline-block;
+   float: left;
+   text-align: right;
    width: 110px;
+   padding-right: 1vh;
    margin-left: -110px;
  }
 

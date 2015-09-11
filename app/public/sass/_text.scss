@@ -55,11 +55,20 @@ body {
     font-family: 'dharma_gothic_ethin';
     text-decoration: none;
     color: $darkgrey;
-    font-size: 1.5em;
+    font-size: 1.7em;
     letter-spacing: 0.07em;
+    display: inline-block;
   }
   i {
     font-size: 2rem;
+  }
+  figcaption {
+    font-size: 0.5rem;
+    font-family: 'gotham';
+    text-transform: uppercase;
+    .hidden {
+      text-transform: lowercase;
+    }
   }
 }
 

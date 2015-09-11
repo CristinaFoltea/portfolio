@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'dharma_gothic_cthin';
-  src: url("public/font/dharma/dharmagothicc-thin-webfont.woff") format("woff");
+  src: url("font/dharmagothicc-thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'dharma_gothic_ethin';
-  src: url("public/font/dharma/DharmaGothicE-Thin.woff") format("woff");
+  src: url("font/DharmaGothicE-Thin.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'gotham';
-  src: url("public/font/GothamRnd-Light.woff") format("woff");
+  src: url("font/GothamRnd-Light.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'gothamM';
-  src: url("public/font/GothamRnd-Medium.woff") format("woff");
+  src: url("font/GothamRnd-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -372,9 +372,9 @@ th {
   padding: 0; }
 
 *, *:after, *:before {
-  -webkit-box-sizing: content-box;
+  -webkit-box-sizing: border-box;
   /* 2 */
-  box-sizing: content-box; }
+  box-sizing: border-box; }
 
 /* Attribute selector */
 [class*='bit-'] {
@@ -406,7 +406,7 @@ body {
     display: inline-block;
     padding: 0 2.3% 0 1.1%; }
   body .about, body .portfolio, body .contact {
-    background: url(public/img/other1_3.jpg) center;
+    background: url(/app/build/img/other1_3.jpg) center;
     background-size: cover;
     position: relative;
     top: 0;
@@ -417,9 +417,11 @@ body {
       width: 40vw;
       margin-left: auto;
       margin-right: auto;
-      padding: 5vh 0 0vh 0;
-      height: 4.8vh;
+      padding: 5vh 0 2vh 0;
       border-bottom: 1px solid #b7c0c4; }
+      body .about .menu a, body .portfolio .menu a, body .contact .menu a {
+        display: inline-block;
+        padding-left: 1vh; }
     body .about .container .info, body .portfolio .container .info, body .contact .container .info {
       padding-top: 7vh;
       width: 40vw;
@@ -428,34 +430,86 @@ body {
       text-align: justify;
       margin-left: auto;
       margin-right: auto; }
+      body .about .container .info p, body .portfolio .container .info p, body .contact .container .info p {
+        line-height: 1rem; }
+      body .about .container .info section.first, body .portfolio .container .info section.first, body .contact .container .info section.first {
+        width: 12vw;
+        float: left;
+        text-align: right; }
+        body .about .container .info section.first p.line1, body .portfolio .container .info section.first p.line1, body .contact .container .info section.first p.line1 {
+          padding-right: 5px; }
+        body .about .container .info section.first p.line2, body .portfolio .container .info section.first p.line2, body .contact .container .info section.first p.line2 {
+          padding-right: 15px; }
+        body .about .container .info section.first p.line3, body .portfolio .container .info section.first p.line3, body .contact .container .info section.first p.line3 {
+          padding-right: 20px; }
+        body .about .container .info section.first p.line4, body .portfolio .container .info section.first p.line4, body .contact .container .info section.first p.line4 {
+          padding-right: 25px; }
+        body .about .container .info section.first p.line5, body .portfolio .container .info section.first p.line5, body .contact .container .info section.first p.line5 {
+          padding-right: 10px; }
+        body .about .container .info section.first p.line6, body .portfolio .container .info section.first p.line6, body .contact .container .info section.first p.line6 {
+          padding-right: 5px; }
+      body .about .container .info section.second, body .portfolio .container .info section.second, body .contact .container .info section.second {
+        float: left; }
+        body .about .container .info section.second p.line1, body .portfolio .container .info section.second p.line1, body .contact .container .info section.second p.line1 {
+          padding-left: 5px; }
+        body .about .container .info section.second p.line2, body .portfolio .container .info section.second p.line2, body .contact .container .info section.second p.line2 {
+          padding-left: 15px; }
+        body .about .container .info section.second p.line3, body .portfolio .container .info section.second p.line3, body .contact .container .info section.second p.line3 {
+          padding-left: 20px; }
+        body .about .container .info section.second p.line4, body .portfolio .container .info section.second p.line4, body .contact .container .info section.second p.line4 {
+          padding-left: 15px; }
+        body .about .container .info section.second p.line5, body .portfolio .container .info section.second p.line5, body .contact .container .info section.second p.line5 {
+          padding-left: 10px; }
+        body .about .container .info section.second p.line6, body .portfolio .container .info section.second p.line6, body .contact .container .info section.second p.line6 {
+          padding-left: 5px; }
       body .about .container .info img, body .portfolio .container .info img, body .contact .container .info img {
         width: 12vw;
+        margin: 3vh;
         height: auto;
         border-radius: 150px 150px;
         box-shadow: 0 1px 2px #88969d;
         float: left; }
     body .about .container .contacts, body .portfolio .container .contacts, body .contact .container .contacts {
-      padding-top: 7vh;
+      padding-top: 2vh;
       width: 50vw;
       padding-left: 29.8vw; }
     body .about .container .figures, body .portfolio .container .figures, body .contact .container .figures {
+      height: auto;
+      width: 100%;
       margin-left: 16vh;
       margin-right: 16vh; }
     body .about .container figure, body .portfolio .container figure, body .contact .container figure {
       position: relative;
       margin: 5.5vh 0 0 0;
       padding: 0;
-      float: left; }
+      float: left;
+      transition: all 0.5s ease; }
+      body .about .container figure:hover, body .portfolio .container figure:hover, body .contact .container figure:hover {
+        transform: scale(1.05, 1.05); }
+        body .about .container figure:hover figcaption, body .portfolio .container figure:hover figcaption, body .contact .container figure:hover figcaption {
+          height: 5vh; }
+          body .about .container figure:hover figcaption .hidden, body .portfolio .container figure:hover figcaption .hidden, body .contact .container figure:hover figcaption .hidden {
+            display: block;
+            left: 0; }
       body .about .container figure img, body .portfolio .container figure img, body .contact .container figure img {
         width: 25vw;
         height: 25vh;
         cursor: pointer; }
       body .about .container figure figcaption, body .portfolio .container figure figcaption, body .contact .container figure figcaption {
         position: absolute;
+        padding: 0.5vh 1vh;
         bottom: 0;
         background: #000;
         color: white;
-        width: 100%; }
+        width: 100%;
+        height: 2.5vh;
+        overflow: hidden;
+        transition: all 0.5s ease; }
+        body .about .container figure figcaption .hidden, body .portfolio .container figure figcaption .hidden, body .contact .container figure figcaption .hidden {
+          transition: all 0.5s ease;
+          position: relative;
+          display: none;
+          left: -10vh; }
     body .about .footer, body .portfolio .footer, body .contact .footer {
       width: 100vw;
       position: fixed;
@@ -576,10 +630,17 @@ body {
     font-family: 'dharma_gothic_ethin';
     text-decoration: none;
     color: #566369;
-    font-size: 1.5em;
-    letter-spacing: 0.07em; }
+    font-size: 1.7em;
+    letter-spacing: 0.07em;
+    display: inline-block; }
   body i {
     font-size: 2rem; }
+  body figcaption {
+    font-size: 0.5rem;
+    font-family: 'gotham';
+    text-transform: uppercase; }
+    body figcaption .hidden {
+      text-transform: lowercase; }
 
 .footer {
   font-size: 0; }
@@ -603,36 +664,51 @@ video#bgvid {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(public/img/mainBG.jpg) no-repeat center center;
+  background: url(./../img/mainBG.jpg) no-repeat center center;
   background-size: cover; }
 
 @media only screen and (max-device-width: 480px) {
   #bgvid {
     display: none; }
-  body h1.title {
-    margin-top: -5vh;
-    border-bottom: 0px; }
-  body .about .menu, body .portfolio .menu, body .contact .menu {
-    border-bottom: 0px;
-    width: 100vw; }
-  body .about .container .info, body .portfolio .container .info, body .contact .container .info {
-    width: 100vw; }
-  body .footer {
-    background: #b7c0c4; }
-    body .footer .footer::before {
-      content: "\f0c9";
-      font-size: 2rem; }
-    body .footer .left {
+  body {
+    background: url(/app/build/img/other1_3.jpg) center;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh; }
+    body h1.title {
+      margin-top: -5vh;
+      padding-bottom: 13vh;
+      border-bottom: 0px; }
+    body .about .menu, body .portfolio .menu, body .contact .menu {
+      border-bottom: 0px;
       width: 100vw; }
-    body .footer .right {
+    body .about .container .info, body .portfolio .container .info, body .contact .container .info {
       width: 100vw; }
+    body .about .container .figures figure, body .portfolio .container .figures figure, body .contact .container .figures figure {
+      width: 55vw;
+      margin-left: -5vw; }
+      body .about .container .figures figure img, body .portfolio .container .figures figure img, body .contact .container .figures figure img {
+        width: 55vw;
+        height: auto; }
+    body .footer {
+      position: fixed;
+      bottom: 0;
+      padding: 0.5vh; }
+      body .footer .left a {
+        font-size: 0.6rem;
+        color: black; }
       body .footer .right h1 {
-        text-align: left;
-        padding: 0 5vw; }
-      body .footer .right img {
-        float: left; }
+        font-size: 1.6rem;
+        position: relative;
+        top: 4vh; }
       body .footer .right .social {
-        padding: 0 5vw; } }
+        position: absolute;
+        bottom: -8vh;
+        right: 0;
+        width: 40vw; } }
 
 input, textarea {
   display: inline-block;
@@ -650,7 +726,10 @@ textarea {
 
 label {
   display: inline-block;
+  float: left;
+  text-align: right;
   width: 110px;
+  padding-right: 1vh;
   margin-left: -110px; }
 
 input[type="button"] {

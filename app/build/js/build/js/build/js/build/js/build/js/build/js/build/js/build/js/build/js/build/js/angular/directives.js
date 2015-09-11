@@ -1,0 +1,1 @@
+app.directive("headerNav",["$location",function(e){return{templateUrl:"angular/templates/header.html",replace:!0}}]),app.directive("footer",function(){return{templateUrl:"angular/templates/footer.html",link:function(e,t){e.visible=!1,console.log(e.visible)}}});

@@ -9,9 +9,9 @@ app.controller('mainCtrl', ['$scope', '$location', function($scope, $location){
   $scope.addClass = function(path) {
     console.log(path)
     if ($location.path().substr(0, path.length) === path) {
-      return true;
+      return 'potato';
     } else {
-      return false;
+      return '';
     }
   }
 }])

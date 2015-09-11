@@ -1,32 +1,18 @@
 <section>
   <header-nav class="menu"></header-nav>
-  <div class="container">
-    <div class="figures">
-      <a href="https://safe-escarpment-9469.herokuapp.com/" target='_blank'>
-      <figure>
-        <img src="public/img/works/explore.png" alt="" />
-        <figcaption>Explorer</figcaption>
-      </figure>
-      </a>
-      <a href="http://development.reddit-g8.divshot.io/" target='_blank'>
+  <div class="container" ng-class="addClass('/view3')">
+    <article class="figures">
+      <a ng-repeat="link in links" href="{{link.href}}">
         <figure>
-          <img src="public/img/works/reddit.png" alt="" />
-          <figcaption>Reddit Clone</figcaption>
+          <img src="{{link.src}}" alt="{{link.name}}" />
+          <figcaption>
+            {{link.name}}
+            </br>
+            <p class="hidden">{{link.disc}}</p>
+          </figcaption>
         </figure>
       </a>
-      <a href="https://protected-shelf-4054.herokuapp.com" target='_blank'>
-        <figure>
-        <img src="public/img/works/movie.png" alt="" />
-        <figcaption>Movie Rating</figcaption>
-        </figure>
-      </a>
-      <a href="https://pacific-ravine-9313.herokuapp.com/" target='_blank'>
-        <figure>
-        <img src="public/img/works/tic.png" alt="" />
-        <figcaption>Tic Tac Toe</figcaption>
-        </figure>
-      </a>
-    </div>
+    </article>
   </div>
   <footer></footer>
 </section>
