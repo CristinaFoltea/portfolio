@@ -44,7 +44,8 @@ body {
    }
   }
   h1 {
-    font-size: 4.3rem;
+    font-size: 4rem;
+    padding-bottom: 1vh;
     letter-spacing: 0.06em;
     color: $red;
     font-weight: 500;
@@ -55,8 +56,8 @@ body {
     font-family: 'dharma_gothic_ethin';
     text-decoration: none;
     color: $darkgrey;
-    font-size: 1.5em;
-    letter-spacing: 0.07em;
+    font-size: 1.5rem;
+    letter-spacing: 0.07rem;
     display: inline-block;
   }
   i {
