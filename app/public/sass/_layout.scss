@@ -54,7 +54,7 @@ body {
         float: left;
         text-align: right;
         p.line1 {
-          padding-right: 0px;
+          margin-right: -5px;
           }
         p.line2 {
           padding-right: 5px;
@@ -63,7 +63,7 @@ body {
           padding-right: 15px;
           }
         p.line4 {
-          padding-right: 25px;
+          padding-right: 20px;
           }
         p.line5 {
           padding-right: 15px;
@@ -75,7 +75,7 @@ body {
           padding-right: 0px;
         }
         p.line8 {
-          padding-right: -10px;
+          margin-right: -5px;
         }
         }
       section.second {
