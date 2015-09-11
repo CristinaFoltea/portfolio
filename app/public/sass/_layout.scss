@@ -112,10 +112,9 @@ body {
       width: 100%;
       margin-left: 16vh;
       margin-right: 16vh;
-    }
     figure {
       position: relative;
-      margin: 5.5vh 0 0 0;
+      margin: 5.5vh 2vw 0 0;
       padding: 0;
       float: left;
       transition: all 0.5s ease;
@@ -151,6 +150,7 @@ body {
           left: -10vh;
         }
       }
+    }
     }
   }
   .footer {
