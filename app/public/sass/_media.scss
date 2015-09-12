@@ -41,11 +41,13 @@
         }
       }
       .figures {
+        overflow: scroll;
+        margin-left: 30vw;
         figure {
           width: 48vw;
+          margin-left: -5vw;
           img{
             width: 48vw;
-            float: left;
             height: auto;
           }
         }
