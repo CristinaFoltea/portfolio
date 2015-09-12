@@ -3,7 +3,7 @@
     display: none;
   }
   body {
-    background: url(/app/build/img/other1_3.jpg)center;
+    background: url(/build/img/other1_3.jpg)center;
     background-size: cover;
     position: relative;
     top: 0;
@@ -41,23 +41,29 @@
       bottom: 0;
       padding: 0.5vh;
       .left {
+        position: absolute;
+        bottom: 1vh;
+        left: -1vh;
         a {
           font-size: 0.6rem;
-          line-height: 0.5rem;
+          line-height: 0.6rem;
           color: darken($darkgrey, 40%);;
         }
       }
       .right {
+        float: right;
         h1 {
           font-size: 1.6rem;
           position: relative;
-          top: 4vh;
+          top: -3vh;
+          right: -4vh;
         }
         .social{
-          position: absolute;
-          bottom: -8vh;
-          right: 0;
           width: 40vw;
+          margin-bottom: -5vh;
+          i {
+            padding-right: 0;
+          }
         }
       }}
     }
