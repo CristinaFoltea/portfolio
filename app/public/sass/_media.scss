@@ -41,6 +41,8 @@
         }
       }
       .figures {
+        overflow: scroll;
+        margin-left: 30vw;
         figure {
           width: 55vw;
           margin-left: -5vw;
