@@ -1,18 +1,6 @@
 <section>
   <header-nav class="menu"></header-nav>
-  <div class="container" ng-class="addClass('/view3')">
-    <article class="figures">
-      <a ng-repeat="link in links" href="{{link.href}}">
-        <figure>
-          <img src="{{link.src}}" alt="{{link.name}}" />
-          <figcaption>
-            {{link.name}}
-            </br>
-            <p class="hidden">{{link.disc}}</p>
-          </figcaption>
-        </figure>
-      </a>
-    </article>
+  <div class="container" ng-include="template">
   </div>
   <footer></footer>
 </section>

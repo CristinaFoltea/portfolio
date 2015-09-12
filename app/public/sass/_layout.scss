@@ -53,36 +53,40 @@ body {
         width: 13vw;
         float: left;
         text-align: right;
-        p.line1 {
-          margin-right: -5px;
-          }
-        p.line2 {
-          padding-right: 5px;
-          }
-        p.line3 {
-          padding-right: 15px;
-          }
-        p.line4 {
-          padding-right: 20px;
-          }
-        p.line5 {
-          padding-right: 15px;
-          }
-        p.line6 {
-          padding-right: 5px;
-          }
-        p.line7 {
-          margin-right: -5px;
-        }
-        p.line8 {
-          margin-right: -15px;
+        h2 {
+          margin-top: 15vh;
         }
         }
       section.second {
         float: left;
-          h2 {
-            margin-top: 15vh;
+        margin-top: 0.9vh;
+        p {
+          font-weight: 900;
+        }
+        p.line1 {
+          margin-left: -20px;
           }
+        p.line2 {
+          padding-left: 6px;
+          }
+        p.line3 {
+          padding-left: 20px;
+          }
+        p.line4 {
+          padding-left: 26px;
+          }
+        p.line5 {
+          padding-left: 26px;
+          }
+        p.line6 {
+          padding-left: 20px;
+          }
+        p.line7 {
+          margin-left: 6px;
+        }
+        p.line8 {
+          margin-left: -20px;
+        }
         }
       img {
         width: 12vw;

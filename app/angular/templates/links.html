@@ -1,0 +1,12 @@
+<article class="figures">
+  <a ng-repeat="link in links" href="{{link.href}}">
+    <figure>
+      <img src="{{link.src}}" alt="{{link.name}}" />
+      <figcaption>
+        {{link.name}}
+        </br>
+        <p class="hidden">{{link.disc}}</p>
+      </figcaption>
+    </figure>
+  </a>
+</article>

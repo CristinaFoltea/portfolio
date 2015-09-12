@@ -1,1 +1,1 @@
-app.controller("mainCtrl",["$scope","$location",function(t,o){t.getClass=function(t){return o.path().substr(0,t.length)===t?"active":""},t.addClass=function(t){return console.log(t),o.path().substr(0,t.length)===t?"potato":""}}]),app.controller("firstCtrl",["$scope","$location",function(t,o){}]);
+app.controller("mainCtrl",["$scope","$location",function(t,l){t.getClass=function(t){return l.path().substr(0,t.length)===t?"active":""},t.template="angular/templates/links.html",console.log(l.url())}]),app.controller("firstCtrl",["$scope","$location",function(t,l){}]);

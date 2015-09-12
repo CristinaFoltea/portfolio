@@ -36,7 +36,7 @@ gulp.task('font', function () {
 })
 
 gulp.task('watch', function(){
-  //gulp.watch('app/**/*.js', ['scripts'])
+  // gulp.watch('app/**/*.js', ['scripts'])
   gulp.watch('app/public/sass/*.scss', ['styles'])
 })
 
