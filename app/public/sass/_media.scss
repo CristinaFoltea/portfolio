@@ -23,6 +23,22 @@
     .container {
       .info {
         width: 100vw;
+        margin: 0;
+        padding: 0;
+        img {
+          position: absolute;
+          top: 30vh;
+          float: left;
+          width: 20vh;
+          margin: 0;
+        }
+        section.second {
+          margin-top: 10vh;
+          float: right;
+        }
+        section.first {
+          display: none;
+        }
       }
       .figures {
         figure {
