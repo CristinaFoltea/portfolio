@@ -42,6 +42,8 @@ body {
       padding-left: 1vh;
     }
   .container {
+    overflow: scroll;
+    height: 60vh;
     .info {
       padding-top: 5vh;
       margin-left: 29vw;
