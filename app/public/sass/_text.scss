@@ -31,6 +31,12 @@ body {
        font-family: 'gotham';
        font-size: 1rem;
    }
+   .info h2{
+     font-family: 'dharma_gothic_ethin';
+     font-weight: bold;
+     font-size: 2rem;
+     letter-spacing: 0.2rem;
+   }
    .info p{
      line-height: 1rem;
      font-family: 'gotham';
@@ -45,7 +51,7 @@ body {
   h1 {
     font-size: 3.7rem;
     padding-bottom: 1vh;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     color: $red;
     font-weight: 500;
     text-align: center;
