@@ -59,7 +59,7 @@ body {
         float: left;
         margin-top: 0.9vh;
         p {
-          font-weight: 900;
+          font-weight: 700;
         }
         p.line1 {
           margin-left: -20px;
@@ -115,6 +115,7 @@ body {
         transform: scale(1.05, 1.05);
          figcaption {
           height: 5vh;
+          color: white;
           .hidden {
             display: block;
             left: 0;
