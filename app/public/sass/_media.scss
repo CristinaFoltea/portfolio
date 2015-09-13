@@ -1,4 +1,4 @@
-@media (max-device-width: 920px){
+ @media (min-width: 500px) and (max-width: 600px) {
   body {
     .container {
       .info {
@@ -7,8 +7,7 @@
     }
   }
 }
-@media (max-device-width: 850px)
-and (max-width: 850px) {
+@media (max-width: 720px) {
   #bgvid {
     display: none;
   }
@@ -37,14 +36,14 @@ and (max-width: 850px) {
         padding: 1vh;
         img {
           position: absolute;
-          top: 30vh;
-          float: left;
-          width: 20vh;
+          top: 25.5vh;
+          left: 7vw;
+          width: 150px;
           margin: 0;
         }
         section.second {
-          margin-top: 10vh;
-          float: right;
+          margin-top: 4vh;
+          margin-left: 45vw;
         }
         section.first {
           display: none;
@@ -91,6 +90,12 @@ and (max-width: 850px) {
           position: relative;
           bottom: -4.5vh;
           right: 0;
+          a {
+            img.icons {
+              width: 2vh;
+              height: auto;
+            }
+          }
         }
       }}
     }
