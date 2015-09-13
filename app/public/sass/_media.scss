@@ -1,3 +1,12 @@
+@media (max-device-width: 920px){
+  body {
+    .container {
+      .info {
+        background: red;
+      }
+    }
+  }
+}
 @media (max-device-width: 850px)
 and (max-width: 850px) {
   #bgvid {
