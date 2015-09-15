@@ -10,22 +10,22 @@ app.config(['$routeProvider', function($routeProvider) {
   $scope.links = [
     {
     href:'https://safe-escarpment-9469.herokuapp.com/',
-    src : 'build/img/explore.png',
+    src : 'build/img/explore.jpg',
     name :'Explorer'
     },
     {
     href:'http://development.reddit-g8.divshot.io',
-    src : 'build/img/reddit.png',
+    src : 'build/img/reddit.jpg',
     name : 'Reddit Clone'
     },
     {
       href : 'https://protected-shelf-4054.herokuapp.com',
-      src : 'build/img/movie.png',
+      src : 'build/img/movie.jpg',
       name : 'Movie Rating'
     },
     {
       href : 'https://pacific-ravine-9313.herokuapp.com/',
-      src : 'build/img/tic.png',
+      src : 'build/img/tic.jpg',
       name : 'Tic Tac Toe'
     }]
 }]);
