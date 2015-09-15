@@ -11,8 +11,7 @@ app.config(['$routeProvider', function($routeProvider) {
     {
     href:'https://safe-escarpment-9469.herokuapp.com/',
     src : 'build/img/explore.png',
-    name :'Explorer',
-    disc : 'travel app for restless souls'
+    name :'Explorer'
     },
     {
     href:'http://development.reddit-g8.divshot.io',
