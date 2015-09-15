@@ -6,11 +6,9 @@ body {
   .menu {
     position: relative;
     bottom: 2vh;
-  a {
-    position: relative;
-    display: inline-block;
+    a {
     padding: 0 1.2vw;
-  }
+    }
   }}
   h1.title {
     border-bottom: 1px solid $darkgrey;
