@@ -2,7 +2,7 @@ body {
   overflow: hidden;
   .main {
     position: relative;
-    top: 61vh;
+    top: 33vw;
   .menu {
     position: relative;
     top: -25px;
@@ -151,6 +151,9 @@ body {
     bottom: 0;
     left: 0;
     padding-top: 1vw;
+    h1 {
+      padding-bottom: 15px;
+    }
     .left {
       float: left;
     }
