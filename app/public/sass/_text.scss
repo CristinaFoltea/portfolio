@@ -34,7 +34,7 @@ body {
      font-family: 'dharma_gothic_ethin';
      font-weight: bold;
      font-size: 1.8rem;
-     letter-spacing: 0.2rem;
+     letter-spacing: 0.15rem;
    }
    .info p{
      line-height: 1rem;
@@ -78,6 +78,9 @@ body {
 
 .footer {
   font-size: 0;
+  h1 {
+    letter-spacing: 0.2rem;
+  }
   .left {
     padding: 2vh 0 0 3vh;
      a {
