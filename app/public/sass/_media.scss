@@ -64,7 +64,10 @@
         a {
           font-size: 0.6rem;
           line-height: 0.6rem;
-          color: darken($darkgrey, 40%);;
+          color: darken($darkgrey, 40%);
+          i {
+            margin-right: -15px;
+          }
         }
       }
       .right {
