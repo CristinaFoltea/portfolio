@@ -6,14 +6,14 @@ body {
   .menu {
     position: relative;
     top: -25px;
-    a {
-    padding: 0 1vw;
-    }
   }}
   h1.title {
     border-bottom: 1px solid $darkgrey;
     padding-bottom: 50px;
   }
+    a {
+    padding: 0 1vw;
+    }
 
   .about, .portfolio, .contact {
     background: url(font/other1_3.jpg)center;

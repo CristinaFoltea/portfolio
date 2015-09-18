@@ -4,10 +4,6 @@ body {
   color: $darkgrey;
   .menu {
     text-align: center;
-    a.active {
-      font-weight: bold;
-      color: lighten($darkgrey, 37%);
-    }
     .hover:hover {
 	  color: $red;
     }
@@ -20,6 +16,9 @@ body {
     	white-space: nowrap;
     	height: 100%;
     	transition: height 0.4s 0.1s;
+    }
+    .active.hover::before {
+      color: lighten($darkgrey, 37%);
     }
     .hover:hover::before {
     	height: 0%;
