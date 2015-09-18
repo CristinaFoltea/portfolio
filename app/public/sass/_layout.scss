@@ -2,13 +2,13 @@ body {
   overflow: hidden;
   .main {
     width: 100vw;
-    position: fixed;
+    position: relative;
     left: 0;
     right: 0;
-    bottom: 5vw;
+    top: 70vh;
   .menu {
     position: absolute;
-    top: 8.6vw;
+    top: 140px;
     left: 0;
     right: 0;
   }
