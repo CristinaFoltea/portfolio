@@ -1,5 +1,5 @@
 body {
-  overflow: scroll;
+  overflow: hidden;
   font-family: 'dharma_gothic_cthin';
   color: $darkgrey;
   .menu {
@@ -62,7 +62,7 @@ body {
     text-decoration: none;
     color: $darkgrey;
     font-size: 1.5rem;
-    letter-spacing: 0.07rem;
+    letter-spacing: 0.09rem;
     display: inline-block;
   }
   i {
