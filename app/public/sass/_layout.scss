@@ -5,13 +5,14 @@ body {
     top: 63vh;
   .menu {
     position: relative;
-    top: -20px;
+    top: -25px;
     a {
     padding: 0 1vw;
     }
   }}
   h1.title {
     border-bottom: 1px solid $darkgrey;
+    padding-bottom: 40px;
   }
 
   .about, .portfolio, .contact {
