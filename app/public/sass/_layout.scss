@@ -7,16 +7,18 @@ body {
     right: 0;
     bottom: 5vw;
   .menu {
-    position: relative;
-    top: -25px;
-  }}
+    position: absolute;
+    top: 8.6vw;
+    left: 0;
+    right: 0;
+  }
   h1.title {
     border-bottom: 1px solid $darkgrey;
   }
-    a {
+  a {
     padding: 0 1vw;
-    }
-
+  }
+  }
   .about, .portfolio, .contact {
     background: url(font/other1_3.jpg)center;
     background-size: cover;
