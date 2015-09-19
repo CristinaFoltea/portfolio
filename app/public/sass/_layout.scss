@@ -68,7 +68,7 @@ body {
         float: left;
         margin-top: 0.95vw;
         p {
-          line-height: 0.5em;
+          padding: 0 0 4px 0;
         }
         p.line1 {
           margin-left: -20px;
@@ -167,6 +167,9 @@ body {
     }
     .left {
       float: left;
+      a {
+        padding: 0 0 4px 0;
+      }
     }
     .right {
       float: right;
