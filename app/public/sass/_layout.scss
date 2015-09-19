@@ -155,29 +155,25 @@ body {
   .footer {
     width: 100vw;
     position: fixed;
-    bottom: -1vw;
+    bottom: -2vw;
     left: 0;
-    padding-top: 1vw;
-    h1 {
-      padding-bottom: 10px;
-    }
+    padding: 2vw;
     .left {
       float: left;
       a {
-        padding: 0 0 4px 0;
+        padding:0 0 4px 4px;
       }
     }
     .right {
       float: right;
-      margin-right: 2vh;
       position: relative;
-      bottom: 6vh;
+      bottom: 5vh;
       .social {
-        margin-top: -6vh;
+        margin-top: -4.8vh;
         a {
           display: inline;
           img {
-            width: 2vw;
+            width: 1.8vw;
             height: auto;
           }
         }
