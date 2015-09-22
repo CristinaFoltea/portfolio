@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="build/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
-<body ng-controller="mainCtrl" ng-cloak>
-  <div ng-view class="{{page}}"></div>
   <script src="https://code.angularjs.org/1.4.5/angular.min.js"></script>
   <script src="https://code.angularjs.org/1.4.5/angular-animate.min.js"></script>
   <script src="https://code.angularjs.org/1.4.5/angular-route.min.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+  <div ng-cloak ng-view class="{{page}}"></div>
   <script src="build/js/angular/app.js"></script>
   <script src="build/js/angular/controllers.js"></script>
   <script src="build/js/angular/directives.js"></script>
