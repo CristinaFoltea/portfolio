@@ -12,25 +12,25 @@ app.config(['$routeProvider', function($routeProvider) {
     href:'https://safe-escarpment-9469.herokuapp.com/',
     src : 'build/img/explore.jpg',
     name :'Explorer',
-    disc : 'Discover travel destinations based on budget'
+    disc : 'Discover travel destinations based on a budget'
     },
     {
     href:'http://development.reddit-g8.divshot.io',
     src : 'build/img/reddit.jpg',
     name : 'Reddit Clone',
-    disc : "one day app with AngularJs"
+    disc : "1-day app with AngularJs"
     },
     {
       href : 'https://protected-shelf-4054.herokuapp.com',
       src : 'build/img/movie.jpg',
       name : 'Movie Rating',
-      disc : "Full Crud by hand Homework assesment"
+      disc : "Full Crud without a framework"
     },
     {
       href : 'http://development.g8-teashopping.divshot.io',
       src : 'build/img/tea.png',
       name : 'Tea Store',
-      disc : "AngularJs homework assesment"
+      disc : "AngularJs assesment"
     },
     {
       href : 'https://pacific-ravine-9313.herokuapp.com/',
