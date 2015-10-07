@@ -9,7 +9,7 @@ app.config(['$routeProvider', function($routeProvider) {
   $scope.page ="portfolio"
   $scope.links = [
     {
-    href:'https://safe-escarpment-9469.herokuapp.com/',
+    href:'https://explorer-cristina.herokuapp.com',
     src : 'build/img/explore.jpg',
     name :'Explorer',
     disc : 'Discover travel destinations based on a budget'
