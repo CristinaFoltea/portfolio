@@ -30,7 +30,7 @@ app.config(['$routeProvider', function($routeProvider) {
       href : 'http://development.g8-teashopping.divshot.io',
       src : 'build/img/tea.png',
       name : 'Tea Store',
-      disc : "AngularJs assesment"
+      disc : "AngularJs assignment"
     },
     {
       href : 'https://pacific-ravine-9313.herokuapp.com/',
