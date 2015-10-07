@@ -1,1 +1,0 @@
-app.config(["$routeProvider",function(e){e.when("/",{templateUrl:"view1/view1.html",controller:"View1Ctrl"})}]).controller("View1Ctrl",["$scope",function(e){e.page="home"}]);

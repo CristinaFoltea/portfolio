@@ -175,11 +175,6 @@ body {
           img {
             width: 1.8vw;
             height: auto;
-            fill : none;
-            pointer-events: all;
-            &:hover {
-              fill: $red;
-            }
           }
         }
       }

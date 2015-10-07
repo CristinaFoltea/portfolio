@@ -1,1 +1,1 @@
-app.config(["$routeProvider",function(e){e.when("/view4",{templateUrl:"view4/view4.html",controller:"View4Ctrl"})}]).controller("View4Ctrl",["$scope","$http",function(e,t){e.page="contact",e.submit=function(){t.post("https://www.googleapis.com/gmail/v1/users/crisswear@gamil.com/messages/send")}}]);
+app.config(["$routeProvider",function(e){e.when("/view4",{templateUrl:"view4/view4.html",controller:"View4Ctrl"})}]).controller("View4Ctrl",["$scope","$http",function(e,t){e.page="contact"}]);
